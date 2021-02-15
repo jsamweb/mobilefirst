@@ -13,6 +13,7 @@
     --grey: #bababa;
     --off-white: #faf8f7;
     --white: #fff;
+    --box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16)
 }
 *{
     box-sizing: border-box;
@@ -224,5 +225,268 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
+    
+}
+.main-exchange-container__actual{
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: rgb(114, 114, 114);
+    border-radius: 0.5rem;
+
+}
+.main-exchange-container__actual p{
+    color: rgb(65, 30, 30);
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+/* main product detail */
+.main-product-detail{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    padding: 20px 10px;
+    height: auto;
+    background-color:white;
+}
+.main-product-detail__logo{
+    position: absolute;
+    top:-14px;
+    left: calc(50% - 25px);
+    padding: 15px;
+    width: 50px;
+    height: 25px;
+    background-image:url("/assets/imgs/logo-footer.svg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    
+}
+.main-product-detail__title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.main-product-detail__title h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    color: var(--bitcoin-orange);
+    text-shadow:  0px 4px 4px rgba(68, 56, 24, 0.219);
+}
+.main-product-detail__title p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+}
+
+.main-product-card__article{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    margin: 15px auto;
+    min-height: 150px;
+    background-color: #ebebeb;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    /* sombra */
+    box-shadow:0px 5px 7px 0px rgba(50, 50, 50, 0.44); 
+}
+.main-product-card__icon{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 1rem;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.icon-1{
+    background-image: url("../assets/icons/clock-1.png");
+}
+.icon-2{
+    background-image: url("../assets/icons/eye-1.png");
+}
+.icon-3{
+    background-image: url("../assets/icons/dollar-sign-1.png");
+}
+.icon-4{
+    background-image: url("../assets/icons/check-circle-1.png");
+}
+.main-product-card__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+.main-product-card__body{
+
+    margin-top: 10px;
+    font-style: normal;
+    font-weight:lighter;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: rgb(41, 53, 59);
+}
+/* Seccion de conocenos */
+.main-product-img__bitcoin{
+    width: 100%;
+    min-width: 320px;
+    height: 60vh;
+    background-image: url('/assets/imgs/bitcoinbaby-1.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.main-product-img{
+    display: flex;
+    justify-content: center;
+    padding-top: 64px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--white);
+}
+/* seccion planes */
+.main-plans-container{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.main-plans-container__slide{
+   padding-bottom: 6.4rem;
+}
+.main-plans-container__title{
+    width: 90%;
+    min-width: 288px;
+    margin: 0 auto;
+}
+.main-plans-container__title h2{
+    padding-top: 64px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--bitcoin-orange);
+}
+.main-plans-container__title p{
+    padding-top: 24px ;
+    padding-bottom:20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+.main-plans-container__card{
+    width: 70%;
+    position: relative;
+    max-width: 300px;
+    margin: 3.4rem auto 0;
+    height: 250px;
+    background-color: #282623;;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 1rem;
+
+}
+.main-plans-container__recommend{
+   
+    position: absolute;
+    left: calc(50% - 52px);
+    top: -17px;
+    padding: 1rem;
+    background-color: var(--bitcoin-orange);
+    border-radius: 1rem;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--white);
+    
+}
+.main-plans-container__info h3 {
+    padding-top: 31px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+.main-plans-container__info-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--white);
+    margin-bottom: 0.8rem;
+}
+.main-plans-container__info-price{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+    letter-spacing: -0.08rem;
+    color: var(--white);
+}
+.main-plans-container__info-price span{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    vertical-align:28px;
+    position: relative;
+    left: -4px;
+}
+.main-plans-container__info-subtitle{
+    padding: 0 1rem;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align:inherit;
+    width: 80%;
+    margin: 1rem  auto 2rem;
+    color: #727272;
+}
+.main-plans-container__button{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1.2rem 1.6rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: #aed1cf;
+    border: none;
+
+}
+.main-plans-container__button span{
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    margin-left: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/assets/icons/arrow-right\ 1.png);
+}
+/* footer */
+.footer-back-container{
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
     
 }
