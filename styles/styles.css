@@ -377,7 +377,7 @@ main{
     width: 65%;
     position: relative;
     max-width: 300px;
-    min-width: 249px;
+    min-width: 190px;
     height: 260px;
     background-color: #282623;;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
@@ -391,7 +391,7 @@ main{
     width: 65%;
     position: relative;
     max-width: 300px;
-    min-width: 249px;
+    min-width: 190px;
     height: 260px;
     background-color: #282623;;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
@@ -560,9 +560,40 @@ main{
 
 /* footer */
 .footer-back-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     min-width: 320px;
     height: 150px;
     background-color: var(--bitcoin-orange);
+    
+}
+.footer-back-container .left ul {
+    list-style: none;
+    
+}
+.footer-back-container .left li{
+    margin: 1rem 0;
+}
+.footer-back-container .left a{
+    text-decoration: none;
+    color: var(--white);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15%;
+    
+}
+
+.footer-back-container .right p{
+    color: var(--white);
     
 }
