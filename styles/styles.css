@@ -363,7 +363,49 @@ main{
     text-align: center;
 }
 .main-plans-container__slide{
-   padding-bottom: 6.4rem;
+    display: flex;
+    height: auto;
+    overflow: scroll;
+    overscroll-behavior-x:contain;
+    scroll-snap-type: x proximity; 
+    
+    padding-bottom: 6.4rem;
+}
+.main-plans-container__card{
+    scroll-snap-align: center ;
+    margin: 3.4rem 0.5rem 0;
+    width: 65%;
+    position: relative;
+    max-width: 300px;
+    min-width: 249px;
+    height: 260px;
+    background-color: #282623;;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 1rem;
+
+}
+.main-plans-container__card-i{
+    scroll-snap-align: center ;
+    margin: 3.4rem 0.5rem 0;
+    margin-left: 4rem;
+    width: 65%;
+    position: relative;
+    max-width: 300px;
+    min-width: 249px;
+    height: 260px;
+    background-color: #282623;;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 1rem;
+
+}
+.main-plans-container__card-margin{
+    scroll-snap-align: center ;
+    margin: 3.4rem 1rem 0;
+    width: 65%;
+    position: relative;
+    min-width:4rem;
+    height: 260px;
+    border-radius: 1rem;
 }
 .main-plans-container__title{
     width: 90%;
@@ -387,17 +429,9 @@ main{
     line-height: 1.8rem;
     color: var(--soft-orange);
 }
-.main-plans-container__card{
-    width: 70%;
-    position: relative;
-    max-width: 300px;
-    margin: 3.4rem auto 0;
-    height: 250px;
-    background-color: #282623;;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
-    border-radius: 1rem;
 
-}
+/* plan recomendado */
+
 .main-plans-container__recommend{
    
     position: absolute;
@@ -457,7 +491,7 @@ main{
     margin: 1rem  auto 2rem;
     color: #727272;
 }
-.main-plans-container__button{
+.main-plans-container__button, .main-plans-container__button-1, .main-plans-container__button-2{
     display: flex;
     margin: 0 auto;
     align-items: center;
@@ -472,7 +506,7 @@ main{
     border: none;
 
 }
-.main-plans-container__button span{
+.main-plans-container__button span, .main-plans-container__button-1 span, .main-plans-container__button-2 span{
     display: inline-block;
     width: 25px;
     height: 20px;
@@ -482,6 +516,48 @@ main{
     background-position: center;
     background-image: url(/assets/icons/arrow-right\ 1.png);
 }
+/* plan basico */
+.main-plans-container__basic{
+    position: absolute;
+    width: 104px;
+    left: calc(50% - 52px);
+    top: -17px;
+    padding: 1rem;
+    background-color: var(--grey);
+    border-radius: 1rem;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--white);
+}
+.main-plans-container__button-1{
+    background-color: darkgray;
+}
+
+/* plan ilimitado */
+.main-plans-container__unlimited{
+    position: absolute;
+    width: 104px;
+    left: calc(50% - 52px);
+    top: -17px;
+    padding: 1rem;
+    background-color: #6200ff;
+    border-radius: 1rem;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--white);
+}
+.main-plans-container__button-2{
+    background-color: #8539ff8a;
+    color: var(--white);
+}
+
+
 /* footer */
 .footer-back-container{
     width: 100%;
